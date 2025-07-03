@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Melchiades</title>
+    <link rel="stylesheet" href="../mainProject/css/estilo.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul class="navLinks">
+            <li><a href="../mainProject/index.html">Início</a></li>
+            <li><a href="../mainProject/sobremim.html">Sobre Mim</a></li>
+            <li><a href="../mainProject/qualificacao.html">Qualificações</a></li>
+            <li><a href="../mainProject/portfolio.html">Portfólio</a></li>
+            <li><a href="../mainProject/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h1>Bem-vindo ao site do Arthur!</h1>
+        <p>Olá, mundo!</p>
+        <p> Esse site tem como intuito compartilhar informações sobre mim, minhas formações, meus portfólios (exercícios) e de como entrar em contato.</p>
+        
+        <section style="margin-top: 32px;">
+            <h2>Destaques</h2>
+            <p>Navegue pelo menu acima para conhecer mais de mim e do site desenvolvido.</p>
+        </section>
+    </div>
+    <img src="../mainProject/imagem/unsplash2.jpg" class="imagemFundo">
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Site para desenvolvimento pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Atualiza o ano no rodapé
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+        
+        // Marca o link ativo
+        const currentPage = location.pathname.split('/').pop();
+        document.querySelectorAll('.navLinks a').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('ativa');
+            }
+        });
+    </script>
+</body>
+</html>

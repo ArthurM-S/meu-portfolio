@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="../mainProject/css/estilo.css">
+</head>
+<body>
+<img src="../mainProject/imagem/unsplash2.jpg" class="imagemFundo">
+    <nav>
+        <ul class="navLinks">
+            <li><a href="../mainProject/index.html">Início</a></li>
+            <li><a href="../mainProject/sobremim.html">Sobre Mim</a></li>
+            <li><a href="../mainProject/qualificacao.html">Qualificações</a></li>
+            <li><a href="../mainProject/portfolio.html">Portfólio</a></li>
+            <li><a href="../mainProject/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Sobre Mim</h1>
+        
+        <div class="sobreMim">
+            <img src="../mainProject/imagem/minhafoto.jpg" alt="Minha Foto" class="minhaFoto">
+            <div>
+                <h2>Quem sou eu</h2>
+                <p>Meu nome é Arthur Melchiades, tenho 29 anos e moro em Taubaté/SP.<br>Trabalho como Operador de Produção na Gestamp, que fabrica peças metálicas para carros (a estrutura, principalmente). </p>
+                <p>Sempre fui vidrado em tecnologia. Desde moleque, ficava fuçando em computador – queria entender como o hardware funcionava, como os programas eram feitos e, claro, como os jogos que eu curtia eram criados.</p>
+                <p>Agora, decidi levar isso a sério: estou estudando Análise e Desenvolvimento de Sistemas na Uninter pra virar desenvolvedor e entrar de vez na área de TI.</p>
+                
+                <h2>Meus Hobbies</h2>
+                <ul>
+                    <li>Sair para conhecer lugares novos</li>
+                    <li>Animes e mangas</li>
+                    <li>Videogames (PC)</li>
+                    <li>Leitura em geral</li>
+                </ul>
+                
+                <h2>Outros Interesses</h2>
+                <p>Meu mundo não é só bits e bytes! Quando não estou fuçando no computador, você me encontra:</p>
+                <ul>
+                    <li>Pescando</li>
+                    <li>Lendo e pesquisando algum nicho especifico que me interessa</li>
+                    <li>Visitando o sítio do meu irmão</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Meu Site Pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+        document.querySelectorAll('.navLinks a')[1].classList.add('ativa');
+    </script>
+</body>
+</html>

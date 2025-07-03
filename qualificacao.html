@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação Educacional</title>
+    <link rel="stylesheet" href="../mainProject/css/estilo.css">
+</head>
+<body>
+    <img src="../mainProject/imagem/unsplash2.jpg" class="imagemFundo">
+    <nav>
+        <ul class="navLinks">
+            <li><a href="../mainProject/index.html">Início</a></li>
+            <li><a href="../mainProject/sobremim.html">Sobre Mim</a></li>
+            <li><a href="../mainProject/qualificacao.html">Qualificações</a></li>
+            <li><a href="../mainProject/portfolio.html">Portfólio</a></li>
+            <li><a href="../mainProject/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Formação Educacional</h1>
+        
+        <div class="educacional">
+            <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
+            <p><strong>Instituição:</strong> Uninter</p>
+            <p><strong>Período:</strong> 2025 - em andamento</p>
+            <p><strong>Descrição:</strong> Estou no 1º semestre do 1º período.</p>
+        </div>
+        
+        <div class="educacional">
+            <h3>Curso Técnico em Mecânica Automobilístico</h3>
+            <p><strong>Instituição:</strong> SENAI</p>
+            <p><strong>Período:</strong> 2014 - 2015</p>
+        </div>
+        
+        <h2>Idiomas</h2>
+        <ul>
+            <li><strong>Português:</strong> Nativo</li>
+        </ul>
+        <br>
+        <h2>Cursos Complementares</h2>
+        <ul>
+            <li>Operador de Empilhadeira - Senai(2016)</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Site para desenvolvimento pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+        document.querySelectorAll('.navLinks a')[2].classList.add('ativa');
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../mainProject/css/estilo.css">
+</head>
+<body>
+    <nav>
+        <ul class="navLinks">
+            <li><a href="../mainProject/index.html">Início</a></li>
+            <li><a href="../mainProject/sobremim.html">Sobre Mim</a></li>
+            <li><a href="../mainProject/qualificacao.html">Qualificações</a></li>
+            <li><a href="../mainProject/portfolio.html">Portfólio</a></li>
+            <li><a href="../mainProject/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+<img src="../mainProject/imagem/unsplash2.jpg" class="imagemFundo">
+    <div class="container">
+        <h1>Entre em Contato</h1>
+        
+        <form class="formulario" id="contato">
+            <div class="grupoFormulario">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="grupoFormulario">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="grupoFormulario">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit" class="botaoEnviar">Enviar Mensagem</button>
+        </form>
+        
+        <div id="formularioMensagem" style="display: none; margin-top: 16px; padding: 16px; background: #dff0d8; color: #3c763d; border-radius: 4px;"></div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Site para desenvolvimento pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+        document.querySelectorAll('.navLinks a')[4].classList.add('ativa');
+                    
+                    // Simulação de envio do formulário
+                    document.getElementById('contato').addEventListener('submit', function(e) {
+                e.preventDefault(); // Evita recarregar a página
+                
+                // Mostra mensagem de sucesso
+                const messageDiv = document.getElementById('formularioMensagem');
+                messageDiv.textContent = 'Mensagem enviada com sucesso!';
+                messageDiv.style.display = 'block';
+                
+                // Limpa o formulário
+                this.reset(); 
+            });
+
+    </script>
+</body>
+</html>

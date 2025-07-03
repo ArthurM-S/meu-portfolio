@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="../mainProject/css/estilo.css">
+</head>
+<body>
+    <nav>
+        <ul class="navLinks">
+            <li><a href="../mainProject/index.html">Início</a></li>
+            <li><a href="../mainProject/sobremim.html">Sobre Mim</a></li>
+            <li><a href="../mainProject/qualificacao.html">Qualificações</a></li>
+            <li><a href="../mainProject/portfolio.html">Portfólio</a></li>
+            <li><a href="../mainProject/contato.html">Contato</a></li>
+        </ul>
+    </nav>
+<img src="../mainProject/imagem/unsplash2.jpg" class="imagemFundo">
+    <div class="container">
+        <h1>Portfólio</h1>
+        <p>Aqui estão alguns dos projetos desenvolvidos em aula prática e exercícios:</p>
+        
+        <div class="gradeportfolio">
+            <div class="portfolioItem">
+                <h3>Site TechLógica</h3>
+                <p>Desenvolvimento completo de um site de tecnologia.</p>
+                <p><strong>Tecnologias:</strong> HTML e CSS</p>
+                <a href="https://arthurm-s.github.io/site-desenvolvimento/" target="_blank">Ver Projeto</a>
+            </div>
+            
+            <div class="portfolioItem">
+                <h3>Site bibliográfico</h3>
+                <p>Site desenvolvido para fins educacionais.</p>
+                <p><strong>Tecnologias:</strong> HTML e CSS</p>
+                <a href="https://arthurm-s.github.io/site-aula/index.html" target="_blank">Ver Projeto</a>
+            </div>
+            
+            <div class="portfolioItem">
+                <h3>Atividade Aula 3</h3>
+                <p>Site para um apronfundamento em CSS.</p>
+                <p><strong>Tecnologias:</strong> HTML e CSS</p>
+                <a href="https://arthurm-s.github.io/aula03/" target="_blank">Ver Projeto</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Site para desenvolvimento pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+        document.querySelectorAll('.navLinks a')[3].classList.add('ativa');
+    </script>
+</body>
+</html>
